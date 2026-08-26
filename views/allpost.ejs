@@ -1,0 +1,26 @@
+<%- include("partials/header", { title: "All Post - My Blog" }) %>
+
+<section class="posts-section">
+    <h1>All Posts</h1>
+
+    <% if (posts.length === 0) { %>
+        <p>No posts available.</p>
+    <% } else { %>
+        <div class="posts-grid">
+            <% posts.forEach((post, index) => { %>
+                <div class="post-card">
+                    <h2><a href="/post/<%= index %>"><%= post.title %></a></h2>
+                    <p class="post-date"><%= post.date %></p>
+                    <p><%= post.content.substring(0, 100) + "..." %></p>
+
+                    <a href="/post/<%= index %>" class="read-more" style="margin-top: 10px; display: inline-block;">
+                        Read More →
+                    </a>
+                </div>
+                
+            <% }); %>
+        </div>
+    <% } %>
+</section>
+
+<%- include("partials/footer") %>

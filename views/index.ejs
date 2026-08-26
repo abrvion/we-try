@@ -1,0 +1,52 @@
+<%- include("partials/header", { title: "Home - We Try" }) %>
+
+<section class="hero">
+    <h1>Welcome to We Try</h1>
+    <p>Thoughts, ideas, and stories worth sharing.</p>
+</section>
+
+<section class="posts">
+    <h2>Latest Posts</h2>
+
+    <% if (posts && posts.length > 0) { %>
+
+        <% posts.forEach((post, index) => { %>
+
+            <article class="post-card">
+
+                <h3><%= post.title %></h3>
+
+                <p class="post-date">
+                    <%= post.date || "Recently published" %>
+                </p>
+
+                <p class="post-excerpt">
+                    <%= post.content.length > 180
+                        ? post.content.substring(0, 180) + "..."
+                        : post.content %>
+                </p>
+
+                <a href="/post/<%= index %>" class="read-more">
+                    Read More →
+                </a>
+
+            </article>
+
+        <% }) %>
+
+    <% } else { %>
+
+        <div class="empty-state">
+            <h3>No posts yet</h3>
+            <p>Be the first to share something with the world.</p>
+
+            <a href="/create" class="btn btn-primary">
+                Create Your First Post
+            </a>
+        </div>
+
+    <% } %>
+
+</section>
+
+<%- include("partials/footer") %>
