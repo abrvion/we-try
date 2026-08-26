@@ -94,8 +94,15 @@ app.post("/delete/:id", (req, res) => {
 
 
 
-const PORT = 3000;
 
-app.listen(PORT, () => {
-  console.log(`Server is running on ${PORT}`);
-});
+const PORT = process.env.PORT || 3000;
+
+// Keep app.listen for local testing on your computer
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`Server running locally on port ${PORT}`);
+  });
+}
+
+// Export the app for Vercel Serverless
+export default app;
