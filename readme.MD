@@ -18,36 +18,21 @@ I built this full-stack application to try out the CRUD functionality and how it
 - Node.js
 - Express.js
 
-## 🚀 Installation & Setup
+## 🛠️ Installation
 
-Follow these steps to set up the development environment on your local machine.
+Follow these steps to get a local copy of Sticky Board up and running on your machine.
 
 ### Prerequisites
-* Node.js (v18.0.0 or higher recommended)
-* npm, yarn, or pnpm
+* Make sure you have **Node.js** installed ([Download Node.js](https://nodejs.org))
 
-### Step-by-Step Guide
+### Setup Steps
+Open your terminal and run the following commands:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   cd your-repo-name
-   ```
+```bash
+git clone https://github.com/abrvion/sticky_board.git
+cd sticky_board
+npm install
+npm run dev
+```
 
-2. **Install project dependencies:**
-   ```bash
-   npm install
-   # or 'yarn install' / 'pnpm install'
-   ```
-
-3. **Set up Environment Variables (If applicable):**
-   * Duplicate the `.env.example` file.
-   * Rename it to `.env` or `.env.local`.
-   * Add your API keys or configuration secrets.
-
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   # or 'npm start'
-   ```
 
