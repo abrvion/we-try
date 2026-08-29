@@ -5,6 +5,11 @@
 ### Overview 🚀 
 I built this full-stack application to try out the CRUD functionality and how it works on a live site. I deployed it on Vercel so you can try it too. Please visit the live site and try it yourself 
 
+### Features 🎩
+- Seamless CRUD functionality: you can edit, delete, create, and view your posts
+- Fast and forward: there is no hassle using the web application; you can get in and start using it
+- Modern Design: it's a modern design blogpost webapplication
+
 ### Tech stack ⚙️
 - Html
 - Css
