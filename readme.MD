@@ -20,7 +20,7 @@ I built this full-stack application to try out the CRUD functionality and how it
 
 ## 🛠️ Installation
 
-Follow these steps to get a local copy of Sticky Board up and running on your machine.
+Follow these steps to get a local copy of We Try up and running on your machine.
 
 ### Prerequisites
 * Make sure you have **Node.js** installed ([Download Node.js](https://nodejs.org))
@@ -29,10 +29,9 @@ Follow these steps to get a local copy of Sticky Board up and running on your ma
 Open your terminal and run the following commands:
 
 ```bash
-git clone https://github.com/abrvion/sticky_board.git
-cd sticky_board
+git clone https://github.com
+cd we-try
 npm install
-npm run dev
+node index.js
 ```
-
 
