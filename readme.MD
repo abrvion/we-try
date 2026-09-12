@@ -18,7 +18,7 @@ I built this full-stack application to try out the CRUD functionality and how it
 - Node.js
 - Express.js
 
-## 🛠️ Installation
+### 🛠️ Installation
 
 Follow these steps to get a local copy of We Try up and running on your machine.
 
